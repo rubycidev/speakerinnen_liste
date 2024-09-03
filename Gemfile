@@ -68,7 +68,7 @@ gem 'pg_search'
 
 # downgrade gem to solve parsing error https://stackoverflow.com/questions/74725359/ruby-on-rails-legacy-application-update-generates-gem-psych-alias-error-psychb
 gem 'psych', '< 4.0'
-gem 'ruby_ci'
+gem "ruby_ci", github: "RubyCI/ruby_ci_gem", branch: "bugfix/188183739-increase-ruby-support"
 group :development do
   gem 'better_errors'
   gem 'bullet'
