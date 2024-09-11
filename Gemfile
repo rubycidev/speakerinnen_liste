@@ -68,7 +68,7 @@ gem 'pg_search'
 
 # downgrade gem to solve parsing error https://stackoverflow.com/questions/74725359/ruby-on-rails-legacy-application-update-generates-gem-psych-alias-error-psychb
 gem 'psych', '< 4.0'
-gem "ruby_ci", github: "RubyCI/ruby_ci_gem", branch: "bugfix/188183739-increase-ruby-support"
+
 group :development do
   gem 'better_errors'
   gem 'bullet'
@@ -95,4 +95,5 @@ group :test do
   gem 'minitest', '5.11.3' # remove this after upgrading rails from 5.0.0
   gem 'poltergeist', '1.18.1'
   gem 'rails-controller-testing'
+  gem "ruby_ci"
 end
